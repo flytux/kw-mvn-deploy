@@ -25,7 +25,6 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  namespace: apps
   name: kw-mvn
   labels:
     app: dev
