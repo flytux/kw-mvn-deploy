@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: kb-mvn
-          image: vm02:30005/kw-mvn:dev-211105-145153-f7755115
+          image: docker.vm01/kw-mvn:dev-211105-145153-f7755115
           imagePullPolicy: IfNotPresent
           env:
             - name: TZ
