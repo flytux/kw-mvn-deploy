@@ -3,12 +3,12 @@ entries:
   kw-mvn:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-10-27T02:20:27.962608568Z"
+    created: "2022-10-27T02:40:28.501176209Z"
     description: A Helm chart for Kubernetes
-    digest: ab931693ad30bd8564c3a360b7f12487977dcee510c4adee2d0bd9c270845735
+    digest: f22b6ac304d4d7a43c0cc3e2d6742091da8a789a3aae35b028ac91622964353c
     name: kw-mvn
     type: application
     urls:
-    - kw-mvn/kw-mvn-0.1.0.tgz
+    - kw-mvn-0.1.0.tgz
     version: 0.1.0
-generated: "2022-10-27T02:20:27.962027669Z"
+generated: "2022-10-27T02:40:28.500544813Z"
