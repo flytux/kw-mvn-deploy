@@ -1,0 +1,5 @@
+namePrefix: dev-
+commonLabels:
+  service: kw-mvn
+resources:
+- deploy.yml
