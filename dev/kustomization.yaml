@@ -8,3 +8,12 @@ commonLabels:
 images:
 - name: docker.vm01/kw-mvn
   newTag: 20221027-015025-9
+patchesJson6902:
+  - target:
+      version: v1
+      kind: Service
+      name: kw-mvn
+    patch: |-
+      - op: replace
+        path: /spec/ports/0/nodePort
+        value: 30099
