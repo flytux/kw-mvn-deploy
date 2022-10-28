@@ -6,34 +6,18 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: dev
+      app: kw-mvn
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: dev
+        app: kw-mvn
     spec:
       containers:
         - name: kb-mvn
-          image: docker.vm01/kw-mvn:dev-211105-145153-f7755115
+          image: docker.vm01/kw-mvn:init
           imagePullPolicy: IfNotPresent
           env:
             - name: TZ
               value: Asia/Seoul
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: kw-mvn
-  labels:
-    app: dev
-spec:
-  ports:
-    - port: 8080
-      targetPort: 8080
-      nodePort: 30088
-      name: http-port
-  type: NodePort
-  selector:
-    app: dev

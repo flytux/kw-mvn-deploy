@@ -1,5 +1,8 @@
+resources:
+- ./../base
 namePrefix: dev-
 commonLabels:
-  service: kw-mvn
-resources:
-- deploy.yml
+  stage: dev
+images:
+- name: docker.vm01/kw-mvn
+  newTag: 20221027-015025-9
