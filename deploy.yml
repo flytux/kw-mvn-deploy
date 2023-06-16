@@ -6,13 +6,13 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: dev
+      stage: dev
   strategy:
     type: Recreate
   template:
     metadata:
       labels:
-        app: dev
+        stage: dev
     spec:
       containers:
         - name: kb-mvn
@@ -27,7 +27,7 @@ kind: Service
 metadata:
   name: kw-mvn
   labels:
-    app: dev
+    stage: dev
 spec:
   ports:
     - port: 8080
@@ -36,4 +36,4 @@ spec:
       name: http-port
   type: NodePort
   selector:
-    app: dev
+    stage: dev
